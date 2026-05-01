@@ -4,24 +4,24 @@ A small FastAPI + MongoDB project designed for practicing Git merge conflicts.
 
 ## Project Profile
 
-Service name: FastAPI Mongo Practice API
-Primary database: merge_practice
-Default collection: users
-API prefix: /api/v1
-Branch owner: main branch
-Conflict note: Start from main, merge conflict-01 first, then merge another conflict branch.
+Service name: FastAPI Mongo Branch 05 API
+Primary database: merge_practice_branch_05
+Default collection: users_branch_05
+API prefix: /api/branch-05
+Branch owner: conflict-05
+Conflict note: This branch intentionally changes the same project settings as the other branches.
 
 ## Run Locally
 
-1. Create a virtual environment.
+1. Create a virtual environment for branch conflict-05.
 2. Install dependencies with `pip install -r requirements.txt`.
-3. Set `MONGODB_URI` if your MongoDB server is not on localhost.
-4. Start the API with `uvicorn app.main:app --reload`.
+3. Set `MONGODB_URI` before running the branch-05 API.
+4. Start the API with `uvicorn app.main:app --reload --port 8005`.
 
 ## Practice Flow
 
 1. Checkout `main`.
 2. Merge `conflict-01`.
-3. Merge any other `conflict-*` branch.
+3. Merge `conflict-05` or another branch.
 4. Resolve conflicts in the five project files.
-5. Commit the merge and repeat.
+5. Commit the merge and compare your resolved behavior.
