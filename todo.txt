@@ -1,4 +1,0 @@
-Shared Section
-Owner: main branch
-Message: This todo list starts from main and will be changed by each branch.
-Status: ready for practice
