@@ -32,3 +32,4 @@ async def create_user(payload: UserCreate):
     result = await users.insert_one(document)
     document["id"] = str(result.inserted_id)
     return UserOut(**document)
+
