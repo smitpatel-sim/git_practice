@@ -4,9 +4,9 @@ from functools import lru_cache
 from motor.motor_asyncio import AsyncIOMotorClient
 
 MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017")
-DATABASE_NAME = "merge_practice"
-USERS_COLLECTION = "users"
-CONNECTION_LABEL = "main-connection"
+DATABASE_NAME = "merge_practice_branch_01"
+USERS_COLLECTION = "users_branch_01"
+CONNECTION_LABEL = "conflict-01-connection"
 
 
 @lru_cache
