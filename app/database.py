@@ -1,8 +1,6 @@
 import os
 from functools import lru_cache
 
-from motor.motor_asyncio import AsyncIOMotorClient
-
 MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017")
 DATABASE_NAME = "merge_practice"
 USERS_COLLECTION = "users"
