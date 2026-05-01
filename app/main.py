@@ -12,7 +12,7 @@ app = FastAPI(
 API_PREFIX = "/api/v1"
 DEFAULT_ROLE = "reader"
 WELCOME_MESSAGE = "Hello from the main branch FastAPI service."
-
+MESSAGE='CHECK GIT'
 
 @app.get("/health")
 async def health_check():

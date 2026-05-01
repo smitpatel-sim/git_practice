@@ -11,6 +11,8 @@ class UserCreate(BaseModel):
     email: EmailStr
     display_name: str = Field(min_length=1, max_length=80)
     plan: str = DEFAULT_PLAN
+    isDelete:bool = False
+    create_at:str
 
 
 class UserOut(UserCreate):
